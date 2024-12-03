@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <nav>
+        <input class="botao" type="button" id="botaoCriar" value="Criar Tarefa">
+        <input class="botao" type="button" id="botaoAtualizar" value="Atualizar Tarefa">
+        <input class="botao" type="button" id="botaoDeletar" value="Deletar Tarefa">
+    </nav>
+    <main>
+        <section id="menus">
+            <form id="updateFormCriar" class="updateForm">
+                <input type="text" id="nameCriar" placeholder="Nome">
+                <input type="checkbox" id="feitoCriar">
+                <label for="feito" style="color: white; font-size: 15px;">status</label>
+                <button type="submit">Criar</button>
+            </form><br>
+            <form id="updateFormAtualizar" class="updateForm">
+                <input type="text" id="idAtualizar" placeholder="ID">
+                <input type="checkbox" id="feitoAtualizar">
+                <label for="feito" style="color: white; font-size: 15px;">status</label>
+                <button type="submit">Atualizar</button>
+            </form><br>
+            <form id="updateFormDeletar" class="updateForm">
+                <input type="text" id="idDeletar" placeholder="ID">
+                <button type="submit">Deletar</button>
+            </form>
+        </section>
+        <table id="tarefas" class="grid-tarefas">
+        </table>
+    </main>
+    <script src="assets/js/index.js" type="module"></script>
+</body>
+</html>
